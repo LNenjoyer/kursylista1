@@ -13,6 +13,13 @@ namespace kursylista
             public string? code { get; set; }
             public IList<Rate> rates { get; set; }
         }
+        //***************************
+        //nazwa funkcji:          Currency
+        //parametry wejściowe:    get, set, przetrzymuje informacje o walucie, jej kod, nazwe
+        //wartość zwracana:       tablica
+        //informacje:             przepisane z tablicy, nie rozumiem po co to
+        //autor:                  xaml
+        //*************************
         public class Rate
         {
             public string? no { get; set; }
@@ -20,12 +27,26 @@ namespace kursylista
             public double? bid { get; set; }
             public double? ask { get; set; }
         }
+        //***************************
+        //nazwa funkcji:          Rate
+        //parametry wejściowe:    przepisane z tablicy, nie rozumiem po co to
+        //wartość zwracana:       przepisane z tablicy, nie rozumiem po co to
+        //informacje:             przepisane z tablicy, nie rozumiem po co to
+        //autor:                  xaml
+        //*************************
         public MainPage()
         {
             InitializeComponent();
             DateTime dzis = DateTime.Now;
             dpData1.MaximumDate = dzis;
         }
+        //***************************
+        //nazwa funkcji:          MainPage
+        //parametry wejściowe:    wszystko
+        //wartość zwracana:       data
+        //informacje:             potrzebne
+        //autor:                  xaml
+        //*************************
         private void Bcurrency1(object sender, EventArgs e)
         {
             string data = dpData1.Date.ToString("yyyy-MM-dd");
@@ -48,8 +69,14 @@ namespace kursylista
             s += $"Cena skupu : {c.rates[0].bid} \n";
             s += $"Cena sprzedazy : {c.rates[0].ask} \n ";
             textCurrency1.Text = s;
-
         }
+        //***************************
+        //nazwa funkcji:          Bcurrency1
+        //parametry wejściowe:    data, waluta, informacje ze strony internetowej api nbp,
+        //wartość zwracana:      nazwa waluty, kod waluty,wybrana data, cena skupu, cena sprzedarzy
+        //informacje:             cel tego programu
+        //autor:                  Patryk Szykuła
+        //*************************
 
     }
 }
