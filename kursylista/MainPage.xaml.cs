@@ -15,10 +15,10 @@ namespace kursylista
         }
         //***************************
         //nazwa funkcji:          Currency
-        //parametry wejściowe:    get, set, przetrzymuje informacje o walucie, jej kod, nazwe
-        //wartość zwracana:       tablica
-        //informacje:             przepisane z tablicy, nie rozumiem po co to
-        //autor:                  xaml
+        //parametry wejściowe:    nie
+        //wartość zwracana:       tablica,dane z tablicy
+        //informacje:             odpowiada odpowiednim nazwom w pliku z którego sie pobiera dane
+        //autor:                  Patryk Szykuła
         //*************************
         public class Rate
         {
@@ -29,10 +29,10 @@ namespace kursylista
         }
         //***************************
         //nazwa funkcji:          Rate
-        //parametry wejściowe:    przepisane z tablicy, nie rozumiem po co to
-        //wartość zwracana:       przepisane z tablicy, nie rozumiem po co to
-        //informacje:             przepisane z tablicy, nie rozumiem po co to
-        //autor:                  xaml
+        //parametry wejściowe:    nie
+        //wartość zwracana:       dane z tablicy
+        //informacje:             odpowiada odpowiednim nazwom w pliku z którego sie pobiera dane
+        //autor:                  Patryk Szykuła
         //*************************
         public MainPage()
         {
@@ -73,7 +73,7 @@ namespace kursylista
         //***************************
         //nazwa funkcji:          Bcurrency1
         //parametry wejściowe:    data, waluta, informacje ze strony internetowej api nbp,
-        //wartość zwracana:      nazwa waluty, kod waluty,wybrana data, cena skupu, cena sprzedarzy
+        //wartość zwracana:       nazwa waluty, kod waluty,wybrana data, cena skupu, cena sprzedarzy
         //informacje:             cel tego programu
         //autor:                  Patryk Szykuła
         //*************************
